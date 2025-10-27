@@ -1,0 +1,41 @@
+<svg
+   class="user-icon @CssClass" 
+   style="width: @Width; height: @Height; color: @Color; @Style"
+   viewBox="0 0 333.33334 298.73068"
+   xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path
+       d="M 0,0 V 0 C -5.956,0 -10.784,4.828 -10.784,10.784 V 58.07 c 0,5.955 4.828,10.784 10.784,10.784 5.956,0 10.784,-4.829 10.784,-10.784 V 10.784 C 10.784,4.828 5.956,0 0,0"
+       style="fill:@Color;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,166.66667,195.26747)"
+       />
+    <path
+       d="m 0,0 v 0 c -5.956,0 -10.784,4.828 -10.784,10.784 0,5.956 4.828,10.784 10.784,10.784 5.956,0 10.784,-4.828 10.784,-10.784 C 10.784,4.828 5.956,0 0,0"
+       style="fill:@Color;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,166.66667,239.81507)"
+       />
+    <path
+       d="m 0,0 c -1.229,-1.071 -2.854,-1.581 -4.493,-1.581 h -193.451 c -1.639,0 -3.264,0.51 -4.494,1.588 -2.408,2.1 -2.861,5.521 -1.358,8.117 l 96.977,167.972 c 1.15,1.998 3.3,3.235 5.6,3.235 2.301,0 4.45,-1.237 5.601,-3.235 L 1.359,8.124 C 2.861,5.528 2.408,2.107 0,0 M 20.037,18.915 -76.94,186.88 c -4.99,8.649 -14.293,14.019 -24.279,14.019 -9.986,0 -19.289,-5.37 -24.278,-14.012 L -222.474,18.908 c -6.686,-11.56 -4.228,-26.349 5.845,-35.149 5.104,-4.457 11.74,-6.909 18.685,-6.909 H -4.493 c 6.944,0 13.58,2.452 18.677,6.902 10.08,8.8 12.539,23.588 5.853,35.163"
+       style="fill:@Color;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1.3333333,0,0,-1.3333333,301.62533,267.86467)"
+       />
+  </g>
+</svg>
+
+
+@code {
+   [Parameter]
+   public string Width { get; set; } = "20px";
+    
+   [Parameter]
+   public string Height { get; set; } = "20px";
+    
+   [Parameter]
+   public string Color { get; set; } = "#6b7280";
+    
+   [Parameter]
+   public string? CssClass { get; set; }
+    
+   [Parameter]
+   public string? Style { get; set; }
+}

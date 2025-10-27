@@ -1,19 +1,51 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Going_Library_Blazor</RootNamespace>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Going_Library_Blazor</RootNamespace>
 
+        <!-- NuGet 메타데이터 -->
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>   <!-- pack 명령으로 생성 / 필요하면 true -->
+        <PackageId>Going.Library.Blazor</PackageId>
+        <Version>1.0.0</Version>                                 <!-- SemVer: 1.0.0, 1.1.0, 2.0.0 등 -->
+        <Authors>Going</Authors>
+        <Company>Going</Company>
+        <Description>Reusable Blazor components for Going Blazor Web/App Develoopers</Description>
+        <PackageTags>blazor;razor;components;ui</PackageTags>
+        <RepositoryUrl>https://github.com/your-org/going-library-blazor</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/your-org/going-library-blazor</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression> <!-- 또는 PackageLicenseFile 사용 -->
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.png</PackageIcon>
 
-  <ItemGroup>
-    <SupportedPlatform Include="browser" />
-  </ItemGroup>
+        <!-- 심볼/소스링크: 디버깅 편의 -->
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.8" />
-  </ItemGroup>
+        <!-- (선택) 트리밍 친화적 경고 강화 -->
+        <WarningsAsErrors>trim;singlefile</WarningsAsErrors>
+    </PropertyGroup>
 
+    <ItemGroup>
+        <!-- Blazor 컴포넌트에 필요한 패키지 -->
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.8" />
+        <!-- GitHub 사용 시 권장 -->
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    </ItemGroup>
+
+    <!-- 브라우저 대상(이미 있음) -->
+    <ItemGroup>
+        <SupportedPlatform Include="browser" />
+    </ItemGroup>
+
+    <!-- 패키지에 README/Icon 포함 -->
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <!-- 정적 자산(wwwroot)은 SDK가 자동 처리(Static Web Assets) -->
 </Project>

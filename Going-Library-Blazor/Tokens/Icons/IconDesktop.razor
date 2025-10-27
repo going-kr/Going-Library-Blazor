@@ -1,0 +1,66 @@
+<svg
+   class="user-icon @CssClass" 
+   style="width: @Width; height: @Height; color: @Color; @Style"
+   viewBox="0 0 87.310532 80.612"
+   xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path
+       d="m 0,0 h -37.502 c -1.155,0 -2.1,0.945 -2.1,2.1 v 34.109 c 0,1.155 0.945,2.1 2.1,2.1 h 52.255 c 1.155,0 2.1,-0.945 2.1,-2.1 V 20.583"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,54.8032,53.079067)"
+       />
+    <path
+       d="M 0,0 H 24.807"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,21.727067,66.464933)"
+       />
+    <path
+       d="M 0,0 V -10.039"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,32.6368,53.079067)"
+       />
+    <path
+       d="M 0,0 V -10.039"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,46.053467,53.079067)"
+       />
+    <path
+       d="m 0,0 h -20.705 c -0.55,0 -1,0.45 -1,1 v 37.734 c 0,0.55 0.45,1 1,1 H 0 c 0.55,0 1,-0.45 1,-1 V 1 C 1,0.45 0.55,0 0,0 Z"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,83.9772,78.612)"
+       />
+    <path
+       d="M 0,0 H 22.676"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,55.0368,65.091333)"
+       />
+    <path
+       d="M 0,0 H 22.676"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,55.0368,32.610133)"
+       />
+    <path
+       d="m 0,0 c 0,-0.518 -0.42,-0.938 -0.938,-0.938 -0.517,0 -0.937,0.42 -0.937,0.938 0,0.518 0.42,0.937 0.937,0.937 C -0.42,0.937 0,0.518 0,0 Z"
+       style="fill:none;stroke:@Color;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,71.333467,71.3868)"
+       />
+  </g>
+</svg>
+
+
+@code {
+   [Parameter]
+   public string Width { get; set; } = "20px";
+    
+   [Parameter]
+   public string Height { get; set; } = "20px";
+    
+   [Parameter]
+   public string Color { get; set; } = "#6b7280";
+    
+   [Parameter]
+   public string? CssClass { get; set; }
+    
+   [Parameter]
+   public string? Style { get; set; }
+}

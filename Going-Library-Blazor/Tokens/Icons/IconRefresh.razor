@@ -1,0 +1,45 @@
+<svg
+   class="user-icon @CssClass" 
+   style="width: @Width; height: @Height; color: @Color; @Style"
+   viewBox="0 0 90.21907 106.66667"
+   xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path
+       d="m 0,0 c -8.033,-11.799 -6.834,-28 3.63,-38.464 10.464,-10.464 26.665,-11.663 38.464,-3.63 l -8.028,6.119"
+       style="fill:none;stroke:@Color;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,10.986133,31.9632)"
+       />
+    <path
+       d="M 0,0 -2.343,-10.934"
+       style="fill:none;stroke:@Color;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,67.111333,88.088267)"
+       />
+    <path
+       d="m 0,0 c 8.033,11.799 6.834,28 -3.63,38.464 -10.463,10.464 -26.665,11.663 -38.464,3.63 l 8.028,-6.119"
+       style="fill:none;stroke:@Color;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,79.232933,74.703467)"
+       />
+    <path
+       d="M 0,0 2.343,10.934"
+       style="fill:none;stroke:@Color;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,23.107867,18.5784)"
+       />
+  </g>
+</svg>
+
+@code {
+   [Parameter]
+   public string Width { get; set; } = "20px";
+    
+   [Parameter]
+   public string Height { get; set; } = "20px";
+    
+   [Parameter]
+   public string Color { get; set; } = "#6b7280";
+    
+   [Parameter]
+   public string? CssClass { get; set; }
+    
+   [Parameter]
+   public string? Style { get; set; }
+}

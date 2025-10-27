@@ -1,0 +1,30 @@
+<svg
+    class="user-icon @CssClass" 
+    style="width: @Width; height: @Height; color: @Color; @Style"
+    viewBox="0 0 84 86.594666"
+    xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path
+            d="m 0,0 h -50.06 c -0.831,0 -1.505,0.674 -1.505,1.505 v 4.182 c 0,10.537 8.356,19.733 20.113,22.888 -4.912,3.016 -8.059,8.408 -8.059,14.424 0,9.346 7.601,16.947 16.946,16.947 9.346,0 16.947,-7.601 16.947,-16.947 0,-6.016 -3.147,-11.408 -8.06,-14.424 C -1.92,25.42 6.435,16.224 6.435,5.687"
+            style="fill:none;stroke:@Color;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+            transform="matrix(1.3333333,0,0,-1.3333333,72.0864,83.261333)" />
+    </g>
+</svg>
+
+
+@code {
+    [Parameter]
+    public string Width { get; set; } = "20px";
+    
+    [Parameter]
+    public string Height { get; set; } = "20px";
+    
+    [Parameter]
+    public string Color { get; set; } = "#6b7280";
+    
+    [Parameter]
+    public string? CssClass { get; set; }
+    
+    [Parameter]
+    public string? Style { get; set; }
+}

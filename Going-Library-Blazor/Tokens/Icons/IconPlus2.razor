@@ -1,0 +1,36 @@
+<svg
+   class="user-icon @CssClass" 
+   style="width: @Width; height: @Height; color: @Color; @Style"
+   viewBox="0 0 10.328147 10.328147"
+   xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path
+       d="M 0,0 H 6.746"
+       style="fill:none;stroke:@Color;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,0.66666667,5.1640133)"
+       />
+    <path
+       d="M 0,0 V 6.746"
+       style="fill:none;stroke:@Color;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,5.1641333,9.66148)"
+       />
+  </g>
+</svg>
+
+
+@code {
+   [Parameter]
+   public string Width { get; set; } = "20px";
+    
+   [Parameter]
+   public string Height { get; set; } = "20px";
+    
+   [Parameter]
+   public string Color { get; set; } = "#6b7280";
+    
+   [Parameter]
+   public string? CssClass { get; set; }
+    
+   [Parameter]
+   public string? Style { get; set; }
+}

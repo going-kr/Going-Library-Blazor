@@ -1,0 +1,70 @@
+@* Arrow.razor *@
+
+<svg width="@Size" 
+     height="@Size" 
+     viewBox="0 0 12 12" 
+     fill="none" 
+     xmlns="http://www.w3.org/2000/svg"
+     class="@Class">
+    <path d="@PathData" 
+          stroke="@Color" 
+          stroke-width="@StrokeWidth" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+</svg>
+
+@code {
+    [Parameter] public ArrowDirection Direction { get; set; } = ArrowDirection.UpRight;
+    [Parameter] public int Size { get; set; } = 12;
+    [Parameter] public int TailLength { get; set; } = 7;
+    [Parameter] public int ArmLength { get; set; } = 7;
+    [Parameter] public int StrokeWidth { get; set; } = 2;
+    [Parameter] public string? Color { get; set; } = "currentColor";
+    [Parameter] public string? Class { get; set; }
+
+    private string PathData
+    {
+        get
+        {
+            int startX, startY, endX, endY, armH, armV;
+            
+            switch (Direction)
+            {
+                case ArrowDirection.UpRight:
+                    endX = 11; endY = 1;
+                    startX = endX - TailLength; startY = endY + TailLength;
+                    armH = endX - ArmLength; armV = endY + ArmLength;
+                    return $"M{startX} {startY}L{endX} {endY}M{endX} {endY}H{armH}M{endX} {endY}V{armV}";
+                    
+                case ArrowDirection.UpLeft:
+                    endX = 1; endY = 1;
+                    startX = endX + TailLength; startY = endY + TailLength;
+                    armH = endX + ArmLength; armV = endY + ArmLength;
+                    return $"M{startX} {startY}L{endX} {endY}M{endX} {endY}H{armH}M{endX} {endY}V{armV}";
+                    
+                case ArrowDirection.DownRight:
+                    endX = 11; endY = 11;
+                    startX = endX - TailLength; startY = endY - TailLength;
+                    armH = endX - ArmLength; armV = endY - ArmLength;
+                    return $"M{startX} {startY}L{endX} {endY}M{endX} {endY}H{armH}M{endX} {endY}V{armV}";
+                    
+                case ArrowDirection.DownLeft:
+                    endX = 1; endY = 11;
+                    startX = endX + TailLength; startY = endY - TailLength;
+                    armH = endX + ArmLength; armV = endY - ArmLength;
+                    return $"M{startX} {startY}L{endX} {endY}M{endX} {endY}H{armH}M{endX} {endY}V{armV}";
+                    
+                default:
+                    return "";
+            }
+        }
+    }
+
+    public enum ArrowDirection
+    {
+        UpRight,
+        UpLeft,
+        DownRight,
+        DownLeft
+    }
+}

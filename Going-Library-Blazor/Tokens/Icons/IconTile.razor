@@ -1,0 +1,46 @@
+<svg
+   class="user-icon @CssClass" 
+   style="width: @Width; height: @Height; color: @Color; @Style"
+   viewBox="0 0 80.893333 80.447998"
+   xmlns="http://www.w3.org/2000/svg">
+ <g>
+    <path
+       d="m 0,0 h -14.95 c -2.695,0 -4.88,2.184 -4.88,4.879 V 19.83 c 0,2.694 2.185,4.879 4.88,4.879 H 0 c 2.695,0 4.879,-2.185 4.879,-4.879 V 4.879 C 4.879,2.184 2.695,0 0,0 Z"
+       style="fill:none;stroke:@Color;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,28.7728,35.278133)"
+       />
+    <path
+       d="m 0,0 h -14.95 c -2.695,0 -4.88,2.184 -4.88,4.879 V 19.83 c 0,2.694 2.185,4.879 4.88,4.879 H 0 c 2.695,0 4.879,-2.185 4.879,-4.879 V 4.879 C 4.879,2.184 2.695,0 0,0 Z"
+       style="fill:none;stroke:@Color;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,28.7728,78.114667)"
+       />
+    <path
+       d="m 0,0 h -14.95 c -2.695,0 -4.88,2.184 -4.88,4.879 V 19.83 c 0,2.694 2.185,4.879 4.88,4.879 H 0 c 2.695,0 4.879,-2.185 4.879,-4.879 V 4.879 C 4.879,2.184 2.695,0 0,0 Z"
+       style="fill:none;stroke:@Color;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,72.0544,35.278133)"
+       />
+    <path
+       d="m 0,0 h -12.95 c -2.695,0 -4.88,2.184 -4.88,4.879 V 19.83 c 0,2.694 2.185,4.879 4.88,4.879 H 2 c 2.695,0 4.879,-2.185 4.879,-4.879 V 6.879"
+       style="fill:none;stroke:@Color;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,69.387733,78.114667)"
+       />
+  </g>
+</svg>
+
+
+@code {
+    [Parameter]
+    public string Width { get; set; } = "20px";
+    
+    [Parameter]
+    public string Height { get; set; } = "20px";
+    
+    [Parameter]
+    public string Color { get; set; } = "#6b7280";
+    
+    [Parameter]
+    public string? CssClass { get; set; }
+    
+    [Parameter]
+    public string? Style { get; set; }
+}

@@ -1,0 +1,24 @@
+<svg
+    class="user-icon @CssClass" 
+    style="width: @Width; height: @Height; color: @Color; @Style"
+    viewBox="0 0 24 24">
+    <rect width="24" height="24" fill="#03C75A" rx="4"/>
+    <path fill="white" d="M16.273 12.845L7.376 0H0v24h7.727V11.155L16.624 24H24V0h-7.727v12.845z"/>
+</svg>
+
+@code {
+    [Parameter]
+    public string Width { get; set; } = "20px";
+    
+    [Parameter]
+    public string Height { get; set; } = "20px";
+    
+    [Parameter]
+    public string Color { get; set; } = "#6b7280";
+    
+    [Parameter]
+    public string? CssClass { get; set; }
+    
+    [Parameter]
+    public string? Style { get; set; }
+}

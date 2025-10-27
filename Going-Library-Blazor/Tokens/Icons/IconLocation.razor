@@ -1,0 +1,36 @@
+<svg
+    class="user-icon @CssClass" 
+    style="width: @Width; height: @Height; color: @Color; @Style"
+    viewBox="0 0 68.438667 77.649467"
+    xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path
+            d="m 0,0 c 0,-17.665 -23.665,-30.573 -23.665,-30.573 0,0 -23.664,13.405 -23.664,30.573 0,13.07 10.595,23.665 23.664,23.665 C -10.595,23.665 0,13.07 0,0 Z"
+            style="fill:none;stroke:@Color;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+            transform="matrix(1.3333333,0,0,-1.3333333,65.772,34.219333)"
+            />
+        <path
+            d="m 0,0 c 0,-3.273 -2.653,-5.926 -5.926,-5.926 -3.273,0 -5.927,2.653 -5.927,5.926 0,3.273 2.654,5.926 5.927,5.926 C -2.653,5.926 0,3.273 0,0 Z"
+            style="fill:none;stroke:@Color;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+            transform="matrix(1.3333333,0,0,-1.3333333,42.121067,30.923067)"
+            />
+    </g>
+</svg>
+
+
+@code {
+    [Parameter]
+    public string Width { get; set; } = "20px";
+    
+    [Parameter]
+    public string Height { get; set; } = "20px";
+    
+    [Parameter]
+    public string Color { get; set; } = "#6b7280";
+    
+    [Parameter]
+    public string? CssClass { get; set; }
+    
+    [Parameter]
+    public string? Style { get; set; }
+}

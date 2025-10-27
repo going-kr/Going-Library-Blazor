@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     class="user-icon @CssClass" 
+     style="width: @Width; height: @Height; color: @Color; @Style"
+     viewBox="0 0 512 512">
+    <!-- 좌우 반전된 햄버거 메뉴 아이콘 -->
+    <rect x="64" y="96" width="384" height="32" rx="4" fill="currentColor"/>
+    <rect x="192" y="240" width="256" height="32" rx="4" fill="currentColor"/>
+    <rect x="64" y="384" width="384" height="32" rx="4" fill="currentColor"/>
+</svg>
+
+@code {
+    [Parameter]
+    public string Width { get; set; } = "20px";
+    
+    [Parameter]
+    public string Height { get; set; } = "20px";
+    
+    [Parameter]
+    public string Color { get; set; } = "#6b7280";
+    
+    [Parameter]
+    public string? CssClass { get; set; }
+    
+    [Parameter]
+    public string? Style { get; set; }
+}

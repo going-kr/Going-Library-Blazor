@@ -1,0 +1,75 @@
+<svg
+   class="user-icon @CssClass" 
+   style="width: @Width; height: @Height; color: @Color; @Style"
+   viewBox="0 0 97.548134 96.995468"
+   xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path
+       d="m 0,0 v -39.549 l 2,-2 h 70.161 v 4 H 4 V 0 Z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0.6672,40.930267)" />
+    <path
+       d="m 0,0 h -70.161 l -2,2 v 39.549 h 4 V 4 H 0 Z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,96.881467,96.3288)"
+       clip-path="url(#clipPath3)" />
+    <path
+       d="M 0,0 -2,-2 V -27.161 H 2 V -4 h 64.161 v -60.897 h 4 V -2 l -2,2 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,3.3336,9.7986667)" />
+    <path
+       d="M 0,0 H -4 V 60.898 H -68.161 V 37.737 h -4 v 25.161 l 2,2 H -2 l 2,-2 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,96.881467,96.3288)"
+       clip-path="url(#clipPath6)" />
+    <path
+       d="m 18.193,53.21 h 4 v 19.037 h -4 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,96.995467)" />
+    <path
+       d="m 22.192,53.21 h -4 v 19.037 h 4 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,96.995467)"
+       clip-path="url(#clipPath9)" />
+    <path
+       d="m 50.969,53.21 h 4 v 19.037 h -4 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,96.995467)" />
+    <path
+       d="m 54.969,53.21 h -4 v 19.037 h 4 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,96.995467)"
+       clip-path="url(#clipPath12)" />
+    <path
+       d="m 0.5,42.237 h 69.984 v 4 H 0.5 Z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,96.995467)" />
+    <path
+       d="M 70.485,42.237 H 0.5 v 4 h 69.985 z"
+       fill="currentColor"
+       transform="matrix(1.3333333,0,0,-1.3333333,0,96.995467)"
+       clip-path="url(#clipPath15)" />
+    <path
+       d="M 0,0 8.577,-8.967 26.738,5.987"
+       style="fill:none;stroke:@Color;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(1.3333333,0,0,-1.3333333,30.948533,61.521067)" />
+  </g>
+</svg>
+
+
+@code {
+    [Parameter]
+    public string Width { get; set; } = "31px";
+    
+    [Parameter]
+    public string Height { get; set; } = "31px";
+    
+    [Parameter]
+    public string Color { get; set; } = "#6b7280";
+    
+    [Parameter]
+    public string? CssClass { get; set; }
+    
+    [Parameter]
+    public string? Style { get; set; }
+}
