@@ -14,8 +14,8 @@
         <Company>Going</Company>
         <Description>Reusable Blazor components for Going Blazor Web/App Develoopers</Description>
         <PackageTags>blazor;razor;components;ui</PackageTags>
-        <RepositoryUrl>https://github.com/your-org/going-library-blazor</RepositoryUrl>
-        <PackageProjectUrl>https://github.com/your-org/going-library-blazor</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/going-kr/Going-Library-Blazor</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/going-kr/Going-Library-Blazor</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression> <!-- 또는 PackageLicenseFile 사용 -->
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageIcon>icon.png</PackageIcon>
