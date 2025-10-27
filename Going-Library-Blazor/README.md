@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![.NET 9.0](https://img.shields.io/badge/.NET-9.0-5C2D91.svg?logo=dotnet)](https://dotnet.microsoft.com/)
 
-> **Going.Library.Blazor**는 [Going](https://going.com)에서 개발한 **Blazor용 Razor Class Library**로,  
+> **Going.Library.Blazor**는 [Going](https://goingiot.co.kr)에서 개발한 **Blazor용 Razor Class Library**로,  
 > 반복되는 UI 컴포넌트와 스타일을 효율적으로 재사용할 수 있도록 설계되었습니다.
 
 ---
